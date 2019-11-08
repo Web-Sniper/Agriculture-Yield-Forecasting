@@ -5,4 +5,3 @@ class Feedback(models.Model):
     email = models.EmailField(max_length=100)
     contact = models.IntegerField()
     feedback = models.CharField(max_length=250)
-
