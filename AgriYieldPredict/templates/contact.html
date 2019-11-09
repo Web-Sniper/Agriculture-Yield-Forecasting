@@ -1,11 +1,111 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <style></style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static "css/base.css" %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .fa {
+            color: aliceblue;
+
+        }
+
+        .fa:hover {
+            text-decoration: none;
+        }
+
+        .box {
+            color: #333333;
+        }
+
+        .b1 {
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px;
+        }
+        .rounded-circle{
+            margin-top: 5px;
+            box-shadow: 5px 5px 15px;
+        }
+    </style>
+
 </head>
 <body>
+<div class="header">
+    <a href="#default" class="logo" style="margin: 0px;padding: 0px;background-color: #004d4d;"><img
+            src="{% static 'images/logo3.png' %}" height="60px" width="60px" id="logo"/>
+        <b style="color: #b3ffb3;font-size: 20px;">Agriculture Yield Forecasting</b> &nbsp;</a>
+    <div class="header-right">
+        <a  href="/home/">Home</a>
+        <a href="#predict">Prediction</a>
+        <a href="/contact/" class="active">Contact</a>
+        <a href="#feddback">Feedback</a>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row" style="margin-top: 10px;">
+        <div class="b1 col-md-5 text-center" style="border: 1px solid;">
+            <img src="{% static "images/atul1.jpg" %}" class="rounded-circle" height="200px" width="180px">
+            <h2>Atul Kumar</h2><hr>
+            <i class="box fa fa-phone">&nbsp;&nbsp;+91 7318198211</i><br>
+            <i class="box fa fa-envelope-square">&nbsp;&nbsp;atulk5880@gmail.com</i><br><br>
+
+        </div>
+        <div class="b1 offset-md-2 col-md-5 text-center" style="border: 1px solid;">
+            <img src="{% static "images/devesh.jpg" %}" class="rounded-circle" height="200px" width="180px">
+            <h2>Devesh Ahirwar</h2><hr>
+            <i class="box fa fa-phone">&nbsp;&nbsp;+91 8299523528</i><br>
+            <i class="box fa fa-envelope-square">&nbsp;&nbsp;deveshahirwar@live.com</i><br><br>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 10px;">
+        <div class="b1 col-md-5 text-center" style="border: 1px solid;">
+            <img src="{% static "images/pankaj.jpg" %}" class="rounded-circle" height="200px" width="180px">
+            <h2>Pankaj Kumar Mishra</h2><hr>
+            <i class="box fa fa-phone">&nbsp;&nbsp;+91 9140227748</i><br>
+            <i class="box fa fa-envelope-square">&nbsp;&nbsp;atulk5880@gmail.com</i><br><br>
+
+        </div>
+        <div class="b1 offset-md-2 col-md-5 text-center" style="border: 1px solid;">
+            <img src="{% static "images/dipak.jpeg" %}" class="rounded-circle" height="200px" width="180px">
+            <h2>Dipak Kumar</h2><hr>
+            <i class="box fa fa-phone">&nbsp;&nbsp;+91 8840668232</i><br>
+            <i class="box fa fa-envelope-square">&nbsp;&nbsp;dipakkushwaha734@gmail.com</i><br><br>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="footer" style="margin-top: 5px;">
+    <p class="text-center">Copyright &copy 2019</p>
+    <p class="text-center">Rajkiya Engineering College Banda</p>
+    <i class="fa fa-envelope-square" style="float: right;margin-right: 240px;">&nbsp;&nbsp;Email :-&nbsp;&nbsp;<u>atulk246.ak@gmail.com</u></i>
+    <i class="fa fa-phone" style="float: left;margin-left: 280px;">&nbsp;&nbsp;Mobile :-&nbsp;&nbsp;<u>+91
+        8127670821</u></i>
+    <center>
+        <a class="fa fa-facebook" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="fa fa-twitter" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="fa fa-instagram" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="fa fa-linkedin" href="#"></a>&nbsp;&nbsp;&nbsp;
+    </center>
+</div>
 </body>
 </html>

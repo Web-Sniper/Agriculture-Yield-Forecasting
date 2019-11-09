@@ -21,6 +21,7 @@ from YieldPridict import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
+    url(r'^home/', views.index),
     url(r'^prediction/', views.prediction),
     url(r'^contact/', views.contact),
     url(r'^query/', views.query)
