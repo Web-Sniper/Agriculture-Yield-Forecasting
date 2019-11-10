@@ -1,8 +1,8 @@
 from django import forms
 
-class feedback(forms.Form):
+class FeedbackForm(forms.Form):
     name = forms.CharField(
-        label="Enter Your Name: ",
+        label="",
         widget= forms.TextInput(
             attrs={
                 "class":"form-control",
@@ -11,20 +11,29 @@ class feedback(forms.Form):
         )
     )
     email = forms.EmailField(
-        label="Enter Your Email: ",
+        label="",
         widget=forms.EmailInput(
             attrs={
                 "class": "form-control",
-                "placeholder": "Enter Name"
+                "placeholder": "Enter Email"
             }
         )
     )
     contact = forms.IntegerField(
-        label="Enter Your Name: ",
+        label="",
         widget=forms.NumberInput(
             attrs={
                 "class": "form-control",
-                "placeholder": "Enter Name"
+                "placeholder": "Enter Contact"
+            }
+        )
+    )
+    feedback = forms.CharField(
+        label="",
+        widget= forms.Textarea(
+            attrs={
+                "class" : "form-control",
+                "placeholder" : "Your Feedback"
             }
         )
     )
