@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^home/', views.index),
     url(r'^prediction/', views.prediction),
     url(r'^contact/', views.contact),
-    url(r'^query/', views.query)
+    url(r'^feedback/', views.feedback)
 ]
