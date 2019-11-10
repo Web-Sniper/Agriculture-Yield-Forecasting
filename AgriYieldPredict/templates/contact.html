@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="{% static "images/logo3.png" %}" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -40,6 +41,13 @@
         .rounded-circle{
             margin-top: 5px;
             box-shadow: 5px 5px 15px;
+        }
+        .c{
+            transition: transform 2s;
+        }
+        .c:hover{
+            text-decoration: none;
+            transform: rotate(360deg);
         }
     </style>
 
@@ -95,18 +103,15 @@
 </div>
 
 
-<div class="footer" style="margin-top: 5px;">
-    <p class="text-center">Copyright &copy 2019</p>
-    <p class="text-center">Rajkiya Engineering College Banda</p>
-    <i class="fa fa-envelope-square" style="float: right;margin-right: 240px;">&nbsp;&nbsp;Email :-&nbsp;&nbsp;<u>atulk246.ak@gmail.com</u></i>
-    <i class="fa fa-phone" style="float: left;margin-left: 280px;">&nbsp;&nbsp;Mobile :-&nbsp;&nbsp;<u>+91
-        8127670821</u></i>
-    <center>
-        <a class="fa fa-facebook" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="fa fa-twitter" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="fa fa-instagram" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="fa fa-linkedin" href="#"></a>&nbsp;&nbsp;&nbsp;
-    </center>
+<div class="footer" style="margin-top: 5px;height: 100px;">
+       <p class="text-center" >Copyright &copy 2019 <br>Rajkiya Engineering College, Banda<br>
+
+        <a class="c fa fa-facebook" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="c fa fa-twitter" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="c fa fa-instagram" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="c fa fa-linkedin" href="#"></a>
+
+    </p>
 </div>
 </body>
 </html>
