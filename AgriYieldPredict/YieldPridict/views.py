@@ -1,11 +1,12 @@
 from django.shortcuts import render
-from .forms import FeedbackForm
+from .forms import FeedbackForm,PredictionForm
 from .models import Feedback
 from django.http.response import HttpResponse
 def index(request):
     return render(request, "index.html")
 def prediction(request):
-    return render(request, "prediction.html")
+    predictionForm = PredictionForm()
+    return render(request, "prediction.html",{"form":predictionForm})
 def contact(request):
     return render(request,"contact.html")
 def feedback(request):
@@ -33,3 +34,7 @@ def feedback(request):
     else:
         feedback = FeedbackForm()
         return render(request, "query.html", {"abcd": feedback})
+def weather(request):
+    return render(request,'weather.html')
+def crops(request):
+    return render(request,'crops.html')
