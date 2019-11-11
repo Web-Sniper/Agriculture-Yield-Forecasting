@@ -1,4 +1,6 @@
 from django import forms
+import numpy as np
+import pandas as pd
 
 class FeedbackForm(forms.Form):
     name = forms.CharField(
@@ -36,4 +38,33 @@ class FeedbackForm(forms.Form):
                 "placeholder" : "Your Feedback"
             }
         )
+    )
+class PredictionForm(forms.Form):
+    data = pd.read_csv('E:\Major project\AgriYieldPredict\static\datasets\district_UP.csv')
+    x = data.iloc[ :,:].values
+    AREA_CHOICE = (('Select','Select Area'),)
+    for i in x:
+        AREA_CHOICE = AREA_CHOICE+(tuple(i),)
+    area = forms.ChoiceField(
+        widget=forms.Select(
+            attrs={
+                'class' : 'form-control'
+            }
+        ),
+        choices = AREA_CHOICE,
+        label=""
+    )
+    data2 = pd.read_csv('E:\Major project\AgriYieldPredict\static\datasets\months.csv')
+    MONTH_CHOICE = (('Select', 'Select Month'),)
+    y = data2.iloc[:,:].values
+    for j in y:
+        MONTH_CHOICE = MONTH_CHOICE+(tuple(j),)
+    month = forms.ChoiceField(
+        widget=forms.Select(
+            attrs={
+                'class' : 'form-control'
+            }
+        ),
+        choices = MONTH_CHOICE,
+        label=""
     )

@@ -32,6 +32,8 @@
             color: black;
         }
         .c{
+
+            font-size: 20px;
             transition: transform 2s;
         }
         .c:hover{
@@ -57,8 +59,10 @@
         <b style="color: #b3ffb3;font-size: 25px;">Agriculture Yield Forecasting</b> &nbsp;</a>
     <div class="header-right">
         <a href="/home/">Home</a>
-        <a href="/prediction/" >Prediction</a>
-        <a href="/contact/">Contact</a>
+        <a href="/prediction/" >Forecast</a>
+        <a href="/contact/">Our Team</a>
+        <a href="/weather/">Weather</a>
+        <a href="/crops/">Crops</a>
         <a href="/feedback/" class="active">Feedback</a>
     </div>
 </div>
@@ -68,8 +72,8 @@
     <form method="POST">
         {% csrf_token %}
         <div class="row">
-            <div class="offset-sm-2 col-sm-7">
-                <h3 class="text-center" style="font-weight: bold;font-family: 'Times New Roman';margin-top: 20px;">Feedback</h3>
+            <div class="offset-sm-2 col-sm-7 text-center">
+                <h3 style="font-weight: bold;font-family: 'Times New Roman';margin-top: 20px;">Feedback</h3>
             </div>
         </div>
         <div class="row">
@@ -84,7 +88,7 @@
 
         <div class="row">
             <div class="offset-sm-2 col-sm-1">
-                <label class="lb fa fa-envelope-square"></label>
+                <label class="lb fa fa-envelope"></label>
             </div>
             <div class="col-sm-6">
                 {{ abcd.email }}
@@ -125,11 +129,11 @@
 <div class="footer" style="margin-top: 5px;height: 100px;">
        <p class="text-center" >Copyright &copy 2019 <br>Rajkiya Engineering College, Banda<br>
 
-        <a class="c fa fa-facebook" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="c fa fa-twitter" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="c fa fa-facebook" href="https://www.facebook.com/iicrecb/" target="_blank"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="c fa fa-twitter" href="https://twitter.com/iicrecbanda?lang=en" target="_blank"></a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="c fa fa-instagram" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="c fa fa-linkedin" href="#"></a>
-
+        <a class="c fa fa-linkedin" href="https://www.linkedin.com/company/rajkiya-engineering-college-banda/?originalSubdomain=in" target="_blank"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a class="c fa fa-youtube" href="https://www.youtube.com/manageindia" target="_blank"></a>
     </p>
 </div>
 </body>
