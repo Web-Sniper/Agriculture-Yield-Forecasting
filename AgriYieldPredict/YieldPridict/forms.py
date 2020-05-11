@@ -68,3 +68,17 @@ class PredictionForm(forms.Form):
         choices = MONTH_CHOICE,
         label=""
     )
+    data3 = pd.read_csv('E:\Major project\AgriYieldPredict\static\datasets\soil.csv')
+    SOIL_CHOICE = (('Select', 'Select Soil Type'),)
+    z = data3.iloc[:, :].values
+    for k in z:
+        SOIL_CHOICE = SOIL_CHOICE + (tuple(k),)
+    soil = forms.ChoiceField(
+        widget=forms.Select(
+            attrs={
+                'class': 'form-control'
+            }
+        ),
+        choices=SOIL_CHOICE,
+        label=""
+    )

@@ -24,7 +24,7 @@ urlpatterns = [
     url(r'^home/', views.index),
     url(r'^prediction/', views.prediction),
     url(r'^contact/', views.contact),
-    url(r'^weather/',views.weather),
+
     url(r'^feedback/', views.feedback),
     url(r'^crops/',views.crops)
 ]
